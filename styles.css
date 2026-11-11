@@ -113,3 +113,14 @@
   .action-bar .button{min-width:0;width:100%}
   footer{margin:18px 13px 26px;padding-left:0;padding-right:0}
 }
+
+/* Shared form-selection and autosave header for Processing and Utility. */
+.header-actions{display:flex;align-items:center;gap:10px;flex:none}
+.header-actions .home-link{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:8px 12px;white-space:nowrap}
+.header-actions .saved-state{display:inline-flex;align-items:center;justify-content:center;min-width:150px;max-width:230px;min-height:36px;padding:8px 12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center}
+@media(max-width:760px){
+  .topbar{height:auto!important;min-height:66px;padding:10px 14px!important;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;gap:9px;align-items:center}
+  .topbar>.brand{min-width:0;width:100%}
+  .header-actions{width:100%;display:grid;grid-template-columns:minmax(116px,.9fr) minmax(0,1.4fr);gap:8px}
+  .header-actions .home-link,.header-actions .saved-state{width:100%;min-width:0;max-width:none;min-height:36px;padding:7px 8px;font-size:10px}
+}
