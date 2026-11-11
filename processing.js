@@ -55,6 +55,6 @@
   function clearSignature(id){const canvas=$(id);canvas.getContext('2d').clearRect(0,0,canvas.width,canvas.height);form[id]='';save();}
   document.querySelectorAll('.clear-one').forEach(button=>button.addEventListener('click',()=>clearSignature(button.dataset.canvas)));
   signatureCanvas('makerSign','makerSign');signatureCanvas('approverSign','approverSign');
-  if('serviceWorker'in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('./sw.js?v=26').catch(()=>{});
+  if('serviceWorker'in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('./sw.js?v=27').catch(()=>{});
   load();
 })();
