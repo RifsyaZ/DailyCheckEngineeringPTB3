@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <title>Daily Check Proces</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css?v=12">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar no-print"><a class="brand" href="#top" aria-label="Prima Top Boga - Daily Check"><img src="prima-top-boga.png" alt="Prima Top Boga"><span class="brand-divider"></span><span class="brand-title"><strong>Daily Check</strong><small>Engineering Â· FRM-PL3/ENGG/01/04</small></span></a><span class="saved-state" id="savedState"><i></i> Tersimpan di perangkat ini</span></header>
+  <main class="shell" id="top">
+    <section class="meta panel no-print"><label>Tanggal pengecekan<input id="checkDate" type="date"></label><label>Nama operator<input id="operator" placeholder="Nama lengkap"></label></section>
+    <section class="progress panel no-print"><div><strong id="progressText">0 / 77 mesin diperiksa</strong><span id="progressSub">Pilih kode hasil untuk setiap mesin.</span></div><div class="progress-track"><i id="progressBar"></i></div></section>
+    <section class="list-head no-print"><div><h2>Daftar mesin</h2><p>Kode hasil: A beroperasi Â· B tidak beroperasi Â· C bermasalah</p><p class="food-safety-legend"><span aria-hidden="true"></span> Highlight kuning: prioritaskan perawatan karena isu Food Safety.</p></div><label class="search-wrap"><span aria-hidden="true">âŒ•</span><input id="machineSearch" type="search" placeholder="Cari nama mesin atau area" autocomplete="off"></label></section>
+    <div id="machineList" class="area-list no-print"></div>
+    <section class="sign-panel panel no-print"><div class="sign-head"><div><h2>Tanda tangan digital</h2><p>Gambar tanda tangan di area masing-masing. Tanda tangan ikut masuk ke PDF.</p></div></div><div class="sign-grid"><div class="sign-box"><label>Dibuat Oleh<input id="makerName" placeholder="Nama"></label><label>Jabatan<input id="makerTitle" placeholder="Jabatan"></label><canvas id="makerSign" width="520" height="240" aria-label="Area tanda tangan digital pembuat"></canvas><span>Tanda tangan Â· <span id="makerDateLabel"></span></span><button type="button" class="clear-one button secondary" data-canvas="makerSign">Hapus TTD ini</button></div><div class="sign-box"><label>Diketahui Oleh<input id="approverName" placeholder="Nama"></label><label>Jabatan<input id="approverTitle" placeholder="Jabatan"></label><canvas id="approverSign" width="520" height="240" aria-label="Area tanda tangan digital pemeriksa"></canvas><span>Tanda tangan Â· <span id="approverDateLabel"></span></span><button type="button" class="clear-one button secondary" data-canvas="approverSign">Hapus TTD ini</button></div></div></section>
+    <div class="action-bar no-print"><button id="importBtn" class="button secondary">Impor data</button><button id="exportBtn" class="button secondary">Ekspor data</button><button id="printBtn" class="button">Print PDF</button><input id="importFile" type="file" accept="application/json,.json" hidden></div>
+    <div id="printPages" class="print-pages" aria-hidden="true"></div>
+  </main>
+  <footer class="no-print">Draft disimpan pada browser dan perangkat ini. Ekspor cadangan sebelum berganti perangkat atau menghapus data browser.</footer>
+</body>
+</html>
