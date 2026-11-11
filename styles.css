@@ -113,28 +113,3 @@
   .action-bar .button{min-width:0;width:100%}
   footer{margin:18px 13px 26px;padding-left:0;padding-right:0}
 }
-@media screen{
-  .header-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex:none}
-  .header-controls .home-link{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:8px 11px;border:1px solid #d5e0e6;border-radius:7px;background:#fff;color:#385260;text-decoration:none;font:12px "Segoe UI",Arial,sans-serif;white-space:nowrap}
-  .header-controls .saved-state{display:inline-flex;align-items:center;min-height:34px;padding:7px 10px;border:1px solid #e1ebea;border-radius:20px;background:#f1f6f6;color:#426276;font-size:11px;line-height:1;white-space:nowrap}
-  .header-controls .saved-state i{flex:none}
-}
-@media(max-width:760px){
-  .topbar{gap:8px}
-  .brand{min-width:0;gap:8px}
-  .brand-title{min-width:0}
-  .header-controls{gap:6px}
-  .header-controls .home-link{min-height:34px;padding:7px 9px;font-size:10px}
-  .header-controls .saved-state{min-height:32px;padding:6px 7px;font-size:9px}
-}
-@media(max-width:430px){
-  .topbar{height:auto;min-height:66px;padding:8px 10px}
-  .brand{gap:6px}
-  .brand img{width:44px;height:38px}
-  .brand-title strong{font-size:12px}
-  .brand-title small{display:none}
-  .header-controls{gap:4px}
-  .header-controls .home-link{min-height:32px;padding:6px 8px;font-size:0}
-  .header-controls .home-link::after{content:"Formulir";font-size:9px}
-  .header-controls .saved-state{min-height:30px;padding:5px 6px;font-size:8px}
-}
