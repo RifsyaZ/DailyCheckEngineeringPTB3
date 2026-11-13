@@ -6,15 +6,15 @@
   <meta name="theme-color" content="#102a43">
   <title>Daily Check Processing · Prima Top Boga</title>
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=27">
-  <link rel="stylesheet" href="home.css?v=27">
-  <script src="processing.js?v=27" defer></script>
+  <link rel="stylesheet" href="styles.css?v=28">
+  <link rel="stylesheet" href="home.css?v=28">
+  <script src="processing.js?v=28" defer></script>
 </head>
 <body>
   <header class="topbar no-print"><a class="brand" href="index.html" aria-label="Kembali ke pilihan Daily Check"><img src="prima-top-boga.png" alt="Prima Top Boga"><span class="brand-divider"></span><span class="brand-title"><strong>Daily Check</strong><small>Engineering · FRM-PL3/ENGG/01/04</small></span></a><div class="header-actions"><a class="home-link" href="index.html">Pilih formulir</a><span class="saved-state" id="savedState">Tersimpan otomatis</span></div></header>
   <main class="shell" id="top">
     <section class="meta panel no-print"><label>Tanggal pengecekan<input id="checkDate" type="date"></label><label>Nama operator<input id="operator" placeholder="Nama lengkap"></label></section>
-    <section class="progress panel no-print"><div><strong id="progressText">0 / 77 mesin diperiksa</strong><span id="progressSub">Pilih kode hasil untuk setiap mesin.</span></div><div class="progress-track"><i id="progressBar"></i></div></section>
+    <section class="progress panel no-print"><div><strong id="progressText">0 / 101 mesin diperiksa</strong><span id="progressSub">Pilih kode hasil untuk setiap mesin.</span></div><div class="progress-track"><i id="progressBar"></i></div></section>
     <section class="list-head no-print"><div><h2>Daftar mesin</h2><p>Kode hasil: A beroperasi · B tidak beroperasi · C bermasalah</p><p class="food-safety-legend"><span aria-hidden="true"></span> Highlight kuning: prioritaskan perawatan karena isu Food Safety.</p></div><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="machineSearch" type="search" placeholder="Cari nama mesin atau area" autocomplete="off"></label></section>
     <div id="machineList" class="area-list no-print"></div>
     <section class="sign-panel panel no-print"><div class="sign-head"><div><h2>Tanda tangan digital</h2><p>Gambar tanda tangan di area masing-masing. Tanda tangan ikut masuk ke PDF.</p></div></div><div class="sign-grid"><div class="sign-box"><label>Dibuat Oleh<input id="makerName" placeholder="Nama"></label><label>Jabatan<input id="makerTitle" placeholder="Jabatan"></label><canvas id="makerSign" width="520" height="240" aria-label="Area tanda tangan digital pembuat"></canvas><span>Tanda tangan · <span id="makerDateLabel"></span></span><button type="button" class="clear-one button secondary" data-canvas="makerSign">Hapus TTD ini</button></div><div class="sign-box"><label>Diketahui Oleh<input id="approverName" placeholder="Nama"></label><label>Jabatan<input id="approverTitle" placeholder="Jabatan"></label><canvas id="approverSign" width="520" height="240" aria-label="Area tanda tangan digital pemeriksa"></canvas><span>Tanda tangan · <span id="approverDateLabel"></span></span><button type="button" class="clear-one button secondary" data-canvas="approverSign">Hapus TTD ini</button></div></div></section>
